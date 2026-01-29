@@ -24,7 +24,7 @@ Objective:
 
 This study is significant as it contributes to combating misinformation in the digital era by utilizing XAI. By integrating transparency and interpretability into fake news detection, the outcomes of this research could benefit journalists, social media platforms, policymakers, and the public by providing a reliable tool for identifying and explaining misinformation, supports global efforts toward creating a safer and more truthful digital information ecosystem.
 
-4. Literature Review
+Literature Review
 
    
 
@@ -75,29 +75,29 @@ The dataset comprises both real and fake news articles sourced from reputable an
 
 3)	Data Analysis Techniques: Describe the methods used to analyze the data.
    
-1.	Model Development
+	Model Development
 Five core models were implemented:
 1)	Supervised Models: Logistic Regression, Naive Bayes, Random Forest, and Long Short-Term Memory (LSTM).
 2)	Unsupervised Models: One-Class Support Vector Machine (OCSVM) and Isolation Forest, both designed to detect anomalies in text embeddings.
  
-Each model was trained and tuned based on its inherent strengths:
+4) Each model was trained and tuned based on its inherent strengths:
 
 1)	Random Forest and Logistic Regression: Trained on TF-IDF vectors to capture frequency-based linguistic cues.
 2)	LSTM: Employed word embeddings to learn temporal dependencies within text sequences.
 3)	OCSVM and Isolation Forest: Operated on high-dimensional embeddings to identify outliers indicative of fake news patterns.
    
-2. Explainable AI Integration
+5) Explainable AI Integration
    
 To address the challenge of transparency, an explainability layer was implemented using occlusion-based interpretability techniques. This method systematically perturbed portions of input text to identify words or phrases most influential in model predictions. The explanations were visualized locally within the web-based prototype, allowing users to view how textual evidence contributed to classification outcomes.
 
-4. Model Evaluation
+6) Model Evaluation
    
 Model performance was quantitatively assessed using:
      1)    Accuracy, Precision, Recall F1-Score: To measure classification   effectiveness.
      2)    Confusion Matrices: To visualize correct and incorrect predictions.
      3)    Explainability Metrics: To evaluate the quality and interpretability of model explanations.
      
-  6. System Implementation
+  7) System Implementation
      
 The models were deployed within a Django-based web framework. The system architecture included:
       1)   A URL input interface for submitting news links.
@@ -106,8 +106,8 @@ The models were deployed within a Django-based web framework. The system archite
       4)   A local explanation engine displaying interpretability visualizations.
 
       
-8. Validation and Limitations
-9. 
+ 8)Validation and Limitations
+
 Testing revealed that while the models achieved exceptional performance on the dataset, potential overfitting and label leakage may exist. These issues highlight the necessity for:
 
      1)  Cross-validation.
